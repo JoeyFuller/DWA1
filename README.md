@@ -4,7 +4,7 @@
 **URL SHORTENER API** is a project started by myself for a school assignment. Code is subject to random and maybe mistaken changes. Use as an educational purpose at your own risk.
 
 ##Install
-To install the **URL SHORTENER API** please clone or download the v1.0.0 via [THIS LINK](https://github.com/JoeyFuller/Deployment-Of-Web-Applications.git).
+To install the **URL SHORTENER API** please clone or download the v1.0.0 via [THIS LINK](https://github.com/JoeyFuller/DWA1.git).
 
 Some other files you will need include Node.js [LINK](https://nodejs.org/en/) and NPM [LINK](https://www.npmjs.com) which will both need to be install prior to installing the **URL SHORTENER API**.
 
@@ -26,6 +26,17 @@ This will install everything needed(including dependencies).
 Install a MySQL Database 
 https://www.mysql.com
 
+##ENV Variables
+Create an .env file in the root folder with the following
+```
+DB_NAME="your database name"
+DB_HOST="your host"
+DB_PORT="your port"
+DB_SCHEMA=mysql
+DB_DIALECT=mysql
+DB_USER="your username"
+DB_PASS="your password"
+```
 ##Routes
 To view the "home page" navigate to
 
