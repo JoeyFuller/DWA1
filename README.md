@@ -20,6 +20,12 @@ Once you have reached your directory run the following command.
 npm install
 ```
 This will install everything needed(including dependencies).
+
+##SQL Database
+
+Install a MySQL Database 
+https://www.mysql.com
+
 ##Routes
 To view the "home page" navigate to
 
@@ -27,12 +33,30 @@ To view the "home page" navigate to
 http://localhost:3000/
 ```
 where you will see a simple message displayed as a JSON object. Future changes will show more user friendly interfaces and have actual functionality.
+```
+http://localhost:3000/go/:shortURL
+```
+this is the redirect for the original URL using the short URL
 
 ##Endpoints
-The endpoint currently active is
+The endpoints currently active are
 
 ```
-http://localhost:3000/api/v1/urls
+Create Short URL
+POST /api/v1/urls
+
+Displays all URLs
+GET /api/v1/urls
+
+Displays URLs based on ID
+GET /api/v1/urls/:id
+
+Updates URLs based on ID
+Post /api/v1/urls/:id
+
+Deletes URLs based on ID
+DELETE /api/v1/urls/:id
+
 ```
 This is ment to display a shortened URL or in this case a placeholder url with a 4 digit short code added. EX:
 
