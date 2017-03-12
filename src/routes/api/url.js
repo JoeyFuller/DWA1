@@ -2,6 +2,7 @@
 
 /*Depends*/
 const url = require('../../models/url');
+const util = require('../../lib/util');
 
 /*Exports Express*/
 module.exports = (express) => {
@@ -23,8 +24,10 @@ module.exports = (express) => {
 	/*Read URLS cRud*/
 	router.get('/urls', (req, res) => {
 		url.findAll((err) => {
+			util.debug('Access Denied: Full data read', err, 'error');
 			res.status(500).json(err);
 		}, (data) => {
+			util.debug('Access Granted: Full data read', data, 'success');
 			res.status(200).json(data);
 		})
 	});
@@ -33,8 +36,10 @@ module.exports = (express) => {
 	router.get('/urls/:id', (req, res) => {
 		req.body.id = req.params.id;
 		url.findID(req.body, (err) => {
+			util.debug('Access Denied: Single data read', err, 'error');
 			res.status(500).json(err);
 		}, (data) => {
+			util.debug('Access Granted: Single data read', data, 'success');
 			res.status(200).json(data);
 		})
 	});

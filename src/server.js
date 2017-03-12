@@ -2,7 +2,7 @@
 /*Dependencies*/
 const express = require('express');
 const body_parser = require('body-parser');
-
+const util = require('../src/lib/util');
 require("dotenv").config();
 
 /*Express*/
@@ -18,7 +18,8 @@ app.use('/', require('../src/routes/index.js')(express));
 /*Port to listen on*/
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
-	console.log('Server active on', port, 'until I break it again..'); //console log to show server active
+	util.debug('Server active on', port);
+	//console.log('Server active on', port, 'until I break it again..'); //console log to show server active
 });
 
 /*Export Server*/
