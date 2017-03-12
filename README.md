@@ -1,4 +1,4 @@
-#URL SHORTENER API(Dynamic)
+#URL SHORTENER API
 ##Joey Fuller
 
 **URL SHORTENER API** is a project started by myself for a school assignment. Code is subject to random and maybe mistaken changes. Use as an educational purpose at your own risk.
@@ -20,6 +20,25 @@ Once you have reached your directory run the following command.
 npm install
 ```
 This will install everything needed(including dependencies).
+
+
+##Style Guild
+
+If you have to install ESLint (or update it) I suggest installing globally on your machine with NPM using the following command
+```
+npm install -g eslint
+```
+Your IDE of choice must support the lastest ESLint plugin. I use Sublime Text 3, if you choose to use another IDE you must submit to their rules and plugins. For Sublime text I used a plugin called SublimeLinter which you can install VIA the build in plugin manager on Sublime Text. Documentation for the plugin can be found [HERE](https://github.com/roadhump/SublimeLinter-eslint)
+
+NOTE: If will need to follow the guide strickly and check the Sublime Text console for errors for details on how to fix any issues you maybe having with the plugin reading ESLint.
+
+NOTE: To use SublimeLinte you will also have to manually install AirBnB. There are often version problems with this which can be resolved by the following command in your terminal
+```
+(                                                      
+  export PKG=eslint-config-airbnb;
+  npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
+)
+```
 
 ##SQL Database
 

@@ -1,26 +1,25 @@
-/*Joey Fuller v1.0.0*/ 
-/*Dependencies*/
+/* Joey Fuller v1.4.0 */
+/* Dependencies */
 const express = require('express');
-const body_parser = require('body-parser');
+const bodyParser = require('body-parser');
 const util = require('../src/lib/util');
-require("dotenv").config();
+require('dotenv').config();
 
-/*Express*/
+/* Express */
 const app = express();
 
-/*Body Parser*/
-app.use(body_parser.urlencoded({extended: true}));
-app.use(body_parser.json());
+/* Body Parser */
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-/*Express to Routes*/
+/* Express to Routes */
 app.use('/', require('../src/routes/index.js')(express));
 
-/*Port to listen on*/
+/* Port to listen on */
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
-	util.debug('Server active on', port);
-	//console.log('Server active on', port, 'until I break it again..'); //console log to show server active
+  util.debug('Server active on', port);
 });
 
-/*Export Server*/
+/* Export Server */
 module.exports = server;
