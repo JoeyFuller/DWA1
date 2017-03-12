@@ -32,7 +32,7 @@ Your IDE of choice must support the lastest ESLint plugin. I use Sublime Text 3,
 
 NOTE: If will need to follow the guide strickly and check the Sublime Text console for errors for details on how to fix any issues you maybe having with the plugin reading ESLint.
 
-NOTE: To use SublimeLinte you will also have to manually install AirBnB. There are often version problems with this which can be resolved by the following command in your terminal
+NOTE: To use SublimeLinter you will also have to manually install AirBnB. There are often version problems with this which can be resolved by the following command in your terminal
 ```
 (                                                      
   export PKG=eslint-config-airbnb;
