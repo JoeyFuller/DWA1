@@ -1,3 +1,4 @@
+/* Joey Fuller V1.4.0 */
 const chalk = require('chalk');
 const fs = require('fs');
 const stamp = require('log-timestamp');
@@ -8,7 +9,7 @@ const cons = chalk.magenta;
 function logger(info) {
   if (process.env.DEBUG) {
     const log = console.log(info);
-    fs.appendFile('./logs/log.txt', '\n' + info + '\n', (err) => {
+    fs.appendFile('./logs/log.txt', '\n' + info + '\n', () => {
 
     });
   }

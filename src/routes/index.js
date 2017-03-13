@@ -17,7 +17,7 @@ module.exports = (express) => {
 /* Home Page GET*/
   router.get('/', (req, res) => {
     res.json({ Hello: 'The URL shortner API by Joey Fuller' });
-    util.debug(success('Success: Home page loaded'));
+    util.debug(success('Success: Home page loaded!'));
   });
 
 /* URL ReDirect*/

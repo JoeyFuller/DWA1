@@ -26,7 +26,7 @@ const port = process.env.PORT || 3000;
 util.logger(envVar('Env variable is definded as ' + process.env.DEBUG));
 
 const server = app.listen(port, () => {
-  util.logger(active('Did it work? I think its working on ' + port));
+  util.logger(active('Did it work? I think its working on port ' + port + '! WOW IT IS!!'));
 });
 
 /* Export Server */
