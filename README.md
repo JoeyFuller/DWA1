@@ -103,6 +103,16 @@ prior to the start of the API. Otherwise you will only get basic information unl
 ```
 ./logs/log.txt
 ```
+##Unit tests
+Using Mocha and chai, you can test your node.js programming easy through the terminal. All you have to do is navigate to the root folder, create a /test directory and create the tests you want using mocha, supertest, or any other tester you would like. In order to run ALL tests via terminal add
+```
+"test": "mocha --recursive"
+``` 
+to your package.json file. Then head to terminal in your root folder and execute 
+```
+npm test
+``` 
+and this will run every test you have in said test folder.
 
 #Thank you for your time!
 ##If you have questions feel free to contact me.
