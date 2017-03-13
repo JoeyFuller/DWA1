@@ -8,7 +8,7 @@ const util = require('../lib/util.js');
 
 require('dotenv').config();
 
-const dbCon = chalk.white.dim;
+const dbCon = chalk.magenta.dim;
 
 /* Sequelize to DB */
 const sequelize = new Sequelize(
@@ -26,6 +26,7 @@ process.env.DB_PASS, {
   logging: false,
 });
 
+/* seq start, displays connection succes in terminal */
 sequelize.authenticate();
 util.logger(dbCon('Connection to DB successful... until I break it again'));
 

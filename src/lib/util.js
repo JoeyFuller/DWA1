@@ -1,11 +1,13 @@
 /* Joey Fuller V1.4.0 */
 const chalk = require('chalk');
 const fs = require('fs');
-const stamp = require('log-timestamp');
+const stamp = require('log-timestamp'); /* needed for time stamp in debug env */
 
+/* Chalk rules */
 const saved = chalk.white;
 const cons = chalk.magenta;
 
+/* log files to text */
 function logger(info) {
   if (process.env.DEBUG) {
     const log = console.log(info);
@@ -14,7 +16,7 @@ function logger(info) {
     });
   }
 }
-
+/* Starts console log display when debug is active */
 exports.debug = (title, obj, status) => {
   const output = title;
   if (!status) {
