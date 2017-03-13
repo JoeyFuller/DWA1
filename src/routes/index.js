@@ -3,6 +3,11 @@
 
 /* Depends*/
 const url = require('../models/url');
+const chalk = require('chalk');
+const util = require('./../lib/util');
+
+const success = chalk.green;
+const error = chalk.red;
 
 /* Use Router */
 module.exports = (express) => {
@@ -12,6 +17,7 @@ module.exports = (express) => {
 /* Home Page GET*/
   router.get('/', (req, res) => {
     res.json({ Hello: 'The URL shortner API by Joey Fuller' });
+    util.debug(success('Success: Home page loaded'));
   });
 
 /* URL ReDirect*/
@@ -19,8 +25,10 @@ module.exports = (express) => {
   router.get('/go/:shortURL', (req, res) => {
     req.body.shortURL = req.params.shortURL;
     url.findShortURL(req.body, (err) => {
+      util.debug(error('Error: Long URL load failed', err));
       res.status(500).json(err);
     }, (data) => {
+      util.debug(success('Success: Orginal URL loaded', data));
       res.redirect('http://www.' + data.longURL);
     });
   });

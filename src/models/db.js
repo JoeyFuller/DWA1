@@ -3,7 +3,12 @@
 /* Depends */
 
 const Sequelize = require('sequelize');
+const chalk = require('chalk');
+const util = require('../lib/util.js');
+
 require('dotenv').config();
+
+const dbCon = chalk.white.dim;
 
 /* Sequelize to DB */
 const sequelize = new Sequelize(
@@ -20,6 +25,9 @@ process.env.DB_PASS, {
   },
   logging: false,
 });
+
+sequelize.authenticate();
+util.logger(dbCon('Connection to DB successful... until I break it again'));
 
 /* Table Create*/
 const url = sequelize.define('url', {
