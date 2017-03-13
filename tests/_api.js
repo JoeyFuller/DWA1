@@ -1,2 +1,0 @@
-/* Joey Fuller */
-/* Unit tests */
