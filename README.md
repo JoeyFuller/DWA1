@@ -93,5 +93,16 @@ This is ment to display a shortened URL or in this case a placeholder url with a
 ```
 short_url:dj32
 ```
+
+##Debugging
+There is a hard coded debugging option built in with console logs that can be actived via an environmenal viable in your terminal. To access said method you need to add 
+```
+DEBUG=true
+``` 
+prior to the start of the API. Otherwise you will only get basic information unless you access the text log files found at 
+```
+./logs/log.txt
+```
+
 #Thank you for your time!
 ##If you have questions feel free to contact me.
