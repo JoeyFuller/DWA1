@@ -3,7 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const chalk = require('chalk');
-const util = require('../src/lib/util');
+const util = require('logging_fuller');
 require('dotenv').config();
 
 /* Chalk rules */

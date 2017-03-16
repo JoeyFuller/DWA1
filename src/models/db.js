@@ -4,7 +4,7 @@
 
 const Sequelize = require('sequelize');
 const chalk = require('chalk');
-const util = require('../lib/util.js');
+const util = require('logging_fuller');
 
 require('dotenv').config();
 

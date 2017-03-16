@@ -3,7 +3,7 @@
 /* Depends */
 const chalk = require('chalk');
 const url = require('../../models/url');
-const util = require('../../lib/util');
+const util = require('logging_fuller');
 
 /* Chalk rules */
 const success = chalk.green;

@@ -4,7 +4,7 @@
 /* Depends*/
 const url = require('../models/url');
 const chalk = require('chalk');
-const util = require('./../lib/util');
+const util = require('logging_fuller');
 
 const success = chalk.green;
 const error = chalk.red;

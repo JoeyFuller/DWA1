@@ -8,7 +8,6 @@ const db = require('../src/models/db');
 const urlGen = require('../src/lib/urlGen');
 
 request('http://localhost:3000');
-require('../src/lib/util');
 
 const app = express();
 
