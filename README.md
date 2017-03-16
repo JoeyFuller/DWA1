@@ -93,16 +93,6 @@ This is ment to display a shortened URL or in this case a placeholder url with a
 ```
 short_url:dj32
 ```
-
-##Debugging
-There is a hard coded debugging option built in with console logs that can be actived via an environmenal viable in your terminal. To access said method you need to add 
-```
-DEBUG=true
-``` 
-prior to the start of the API. Otherwise you will only get basic information unless you access the text log files found at 
-```
-./logs/log.txt
-```
 ##Unit tests
 Using Mocha and chai, you can test your node.js programming easy through the terminal. All you have to do is navigate to the root folder, create a /test directory and create the tests you want using mocha, supertest, or any other tester you would like. In order to run ALL tests via terminal add
 ```
