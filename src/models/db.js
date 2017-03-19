@@ -1,4 +1,4 @@
-/* Joey Fuller testing*/
+/* Joey Fuller */
 
 /* Depends */
 
