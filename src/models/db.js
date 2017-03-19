@@ -1,4 +1,4 @@
-/* Joey Fuller */
+/* Joey Fuller v1.7.0 */
 
 /* Depends */
 
@@ -12,11 +12,11 @@ const dbCon = chalk.magenta.dim;
 
 /* Sequelize to DB */
 const sequelize = new Sequelize(
-process.env.DB_NAME,
-process.env.DB_USER,
-process.env.DB_PASS, {
+'hopethisworks',
+'root',
+'root', {
   host: process.env.DB_HOST,
-  dialect: process.env.DB_SCHEMA,
+  dialect:'mysql',
   port: process.env.DB_PORT,
   pool: {
     max: 5,
