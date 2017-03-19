@@ -12,7 +12,7 @@ const dbCon = chalk.magenta.dim;
 
 /* Sequelize to DB */
 const sequelize = new Sequelize(
-'hopethisworks',
+'hopethisworks2',
 'root',
 'root', {
   host: process.env.DB_HOST,
