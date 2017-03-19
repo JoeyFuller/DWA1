@@ -1,4 +1,4 @@
-/* Joey Fuller v1.7.0 test */
+/* Joey Fuller v1.7.0 testing */
 /* Dependencies */
 const express = require('express');
 const bodyParser = require('body-parser');
