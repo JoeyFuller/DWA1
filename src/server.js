@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use('/', require('../src/routes/index.js')(express));
 
 /* Port to listen on */
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 util.logger(envVar('Env variable is definded as ' + process.env.DEBUG));
 
