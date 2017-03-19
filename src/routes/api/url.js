@@ -1,4 +1,4 @@
-/* Joey Fuller v1.4.0 */
+/* Joey Fuller v1.7.0 */
 
 /* Depends */
 const chalk = require('chalk');
