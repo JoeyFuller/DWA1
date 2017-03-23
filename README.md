@@ -1,9 +1,9 @@
-#URL SHORTENER API
-##Joey Fuller
+# URL SHORTENER API
+## Joey Fuller
 
 **URL SHORTENER API** is a project started by myself for a school assignment. Code is subject to random and maybe mistaken changes. Use as an educational purpose at your own risk.
 
-##Install
+## Install
 To install the **URL SHORTENER API** please clone or download the v1.4.0(at the time of this update) via [THIS LINK](https://github.com/JoeyFuller/DWA1.git).
 
 Some other files you will need include Node.js [LINK](https://nodejs.org/en/) and NPM [LINK](https://www.npmjs.com) which will both need to be install prior to installing the **URL SHORTENER API**.
@@ -22,7 +22,7 @@ npm install
 This will install everything needed(including dependencies).
 
 
-##Style Guild
+## Style Guild
 
 If you have to install ESLint (or update it) I suggest installing globally on your machine with NPM using the following command
 ```
@@ -40,12 +40,12 @@ NOTE: To use SublimeLinter you will also have to manually install AirBnB. There 
 )
 ```
 
-##SQL Database
+## SQL Database
 
 Install a MySQL Database 
 https://www.mysql.com
 
-##ENV Variables
+## ENV Variables
 Create an .env file in the root folder with the following
 ```
 DB_NAME="your database name"
@@ -56,7 +56,7 @@ DB_DIALECT=mysql
 DB_USER="your username"
 DB_PASS="your password"
 ```
-##Routes
+## Routes
 To view the "home page" navigate to
 
 ```
@@ -68,7 +68,7 @@ http://localhost:3000/go/:shortURL
 ```
 this is the redirect for the original URL using the short URL
 
-##Endpoints
+## Endpoints
 The endpoints currently active are
 
 ```
@@ -93,7 +93,7 @@ This is ment to display a shortened URL or in this case a placeholder url with a
 ```
 short_url:dj32
 ```
-##Unit tests
+## Unit tests
 Using Mocha and chai, you can test your node.js programming easy through the terminal. All you have to do is navigate to the root folder, create a /test directory and create the tests you want using mocha, supertest, or any other tester you would like. In order to run ALL tests via terminal add
 ```
 "test": "mocha --recursive"
@@ -104,7 +104,7 @@ npm test
 ``` 
 and this will run every test you have in said test folder.
 
-##Version Bumping
+## Version Bumping
 There is a helpful version bumping tool that will help automatically adjust your version to meet standards with patches, minor, and major updates. 
 
 If needed to install, from your root folder:
@@ -115,7 +115,7 @@ To properly use the bumping tool you will need to use the following command:
 ```
 node src/lib/verbump.js -v {PATCH TYPE} -n {version#}
 ```
-##Debugging
+## Debugging
 A debugging tool developed for this API is also included which allows you to see (in fancy colors) what is happeneing and what is not. This allows you to see when you connect, d/c, etc. 
 
 To enable the debugging tool place the following command in your terminal:
@@ -123,5 +123,6 @@ To enable the debugging tool place the following command in your terminal:
 DEBUG=true 
 ```
 prior to the API start up.
-#Thank you for your time!
-##If you have questions feel free to contact me.
+
+# Thank you for your time!
+## If you have questions feel free to contact me.
