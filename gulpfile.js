@@ -6,7 +6,7 @@ const edit = require('gulp-json-editor');
 
 const packjson = require('./package.json');
 const util = require('logging-fuller');
-const vbumper = require('./src/lib/verbump');
+const verbump = require('./src/lib/verbump');
 
 const version = packjson.version.split('.');
 const argv = require('yargs').argv;
@@ -37,7 +37,7 @@ if ((argv.v === 'major' || argv.v === 'minor' || argv.v === 'patch') && typeof a
   console.log('Please verify your arguments.');
 }
  /* export */
-module.exports = vbumper;
+module.exports = verbump;
 
 /* add to git */
 gulp.task('add', () => {
@@ -69,7 +69,7 @@ gulp.task('mastPush', ['add', 'commit'], () => {
 gulp.task('patch', () => {
   gulp.src('./package.json')
     .pipe(edit({
-      version: util.vbumper(packjson.version, 'patch'),
+      version: util.verbump(packjson.version, 'patch'),
     }))
     .pipe(gulp.dest('./'));
 });
@@ -78,7 +78,7 @@ gulp.task('patch', () => {
 gulp.task('minor', () => {
   gulp.src('./package.json')
   .pipe(edit({
-    version: util.vbumper(packjson.version, 'minor'),
+    version: util.verbump(packjson.version, 'minor'),
   }))
   .pipe(gulp.dest('./'));
 });
@@ -87,7 +87,7 @@ gulp.task('minor', () => {
 gulp.task('major', () => {
   gulp.src('./package.json')
   .pipe(edit({
-    version: util.vbumper(packjson.version, 'major'),
+    version: util.verbump(packjson.version, 'major'),
   }))
   .pipe(gulp.dest('./'));
 });
