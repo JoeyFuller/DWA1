@@ -88,7 +88,7 @@ Deletes URLs based on ID
 DELETE /api/v1/urls/:id
 
 ```
-This is ment to display a shortened URL or in this case a placeholder url with a 4 digit short code added. EX:
+This is ment to display a shortened URL or in this case a placeholder url with a 4 digit short code added EX:
 
 ```
 short_url:dj32
