@@ -104,5 +104,24 @@ npm test
 ``` 
 and this will run every test you have in said test folder.
 
+##Version Bumping
+There is a helpful version bumping tool that will help automatically adjust your version to meet standards with patches, minor, and major updates. 
+
+If needed to install, from your root folder:
+```
+NPM install verbump
+```
+To properly use the bumping tool you will need to use the following command:
+```
+node src/lib/verbump.js -v {PATCH TYPE} -n {version#}
+```
+##Debugging
+A debugging tool developed for this API is also included which allows you to see (in fancy colors) what is happeneing and what is not. This allows you to see when you connect, d/c, etc. 
+
+To enable the debugging tool place the following command in your terminal:
+```
+DEBUG=true 
+```
+prior to the API start up.
 #Thank you for your time!
 ##If you have questions feel free to contact me.
