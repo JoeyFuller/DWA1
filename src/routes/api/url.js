@@ -4,6 +4,7 @@
 const chalk = require('chalk');
 const url = require('../../models/url');
 const util = require('logging_fuller');
+const urlGen = require('../../../src/lib/urlGen');
 
 /* Chalk rules */
 const success = chalk.green;
